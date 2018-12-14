@@ -23,10 +23,6 @@ class Mail {
             host: config.host,
             port: config.port,
             secure: false,
-            // auth: {
-            //     user: config.user,
-            //     pass: config.password
-            // },
             tls: { rejectUnauthorized: true }
         });
 
