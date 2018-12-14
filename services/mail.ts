@@ -1,11 +1,12 @@
 import * as nodemailer from "nodemailer";
 import config from '../configs/configs';
-import { MailOptions } from "nodemailer/lib/json-transport";
+
 
 class Mail {
 
     constructor(
         public to?: string,
+        public bcc?: string,
         public subject?: string,
         public message?: string) { }
 
@@ -13,8 +14,9 @@ class Mail {
     sendMail() {
         // let mail: MailOptions;
         let mailOptions = {
-            from: "mmendoza@exisoft.com.ar",
+            from: "ExiMorfi@exisoft.com.ar",
             to: this.to,
+            bcc: this.bcc,
             subject: this.subject,
             html: this.message
         };

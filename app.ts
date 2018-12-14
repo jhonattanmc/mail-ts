@@ -24,11 +24,12 @@ class App {
             const message = Object.assign({}, req.body);     
             
             Mail.to = message.to;
+            Mail.bcc = message.bcc;
             Mail.subject = message.subject;
             Mail.message = message.message;
             let result = Mail.sendMail();
 
-            res.status(200).json({ 'result': 'mail enviado ' + JSON.stringify(result) })
+            res.status(200).json({ 'result': 'mail enviado ' + result })
         });
 
 
