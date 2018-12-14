@@ -4,14 +4,15 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    
     "start": "nodemon dist/server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/cors": "^2.8.4",
     "body-parser": "^1.18.2",
+    "cors": "^2.8.5",
     "express": "^4.16.2",
     "http-status": "^1.0.1",
     "nodemailer": "^4.4.2",

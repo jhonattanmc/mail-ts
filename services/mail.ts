@@ -12,7 +12,7 @@ class Mail {
 
     sendMail() {
         // let mail: MailOptions;
-        let mailOptions: MailOptions = {
+        let mailOptions = {
             from: "mmendoza@exisoft.com.ar",
             to: this.to,
             subject: this.subject,
