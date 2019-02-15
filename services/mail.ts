@@ -6,7 +6,7 @@ class Mail {
 
     constructor(
         public to?: string,
-        public bcc?: string,
+        public bcc?: string[],
         public subject?: string,
         public message?: string) { }
 
@@ -14,7 +14,7 @@ class Mail {
     sendMail() {
         // let mail: MailOptions;
         let mailOptions = {
-            from: "ExiMorfi@exisoft.com.ar",
+            from: "jmamani@exisoft.com.ar",
             to: this.to,
             bcc: this.bcc,
             subject: this.subject,

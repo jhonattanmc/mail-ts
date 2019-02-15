@@ -4,6 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "compile": "tsc -w",
     "start": "nodemon dist/server.js"
   },
   "keywords": [],
